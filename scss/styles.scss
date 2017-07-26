@@ -1,0 +1,71 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+$grid-gutter-width: 10px;
+
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*  */
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+}
+
+.site-width {
+width: 72%;
+margin: auto;
+}
+
+.top-nav {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  background-color: #C40015;
+  padding: 5px;
+  border-bottom: 5px solid rgba(200, 200, 200, 0);
+  margin-bottom: 20px;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    border-bottom: 3px solid #ffffff;
+    top: 50%;
+  }
+
+  &::before {
+
+  }
+
+}
+
+.nav-a {
+  @extend .top-nav;
+}
+
+.powell {
+  background: #ffffff url('../img/top-image.png') no-repeat;
+  background-size: cover;
+  height: 340px;
+  width: 100%;
+  border: 10px solid #ffffff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.powell-grid {
+  position: relative;
+  margin: 0;
+  opacity: .35;
+}
+
+.powell-logo {
+  position: absolute;
+  z-index: 999999;
+  top: 15%;
+  left: 2%;
+}
